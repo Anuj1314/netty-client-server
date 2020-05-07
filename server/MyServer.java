@@ -16,7 +16,7 @@ public class MyServer {
     }
 
     public void run() throws Exception{
-        EventLoopGroup group = new NioEventLoopGroup(c);
+        EventLoopGroup group = new NioEventLoopGroup();
 
         try{
             ServerBootstrap serverBootstrap = new ServerBootstrap();
